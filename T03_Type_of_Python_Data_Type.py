@@ -1,4 +1,6 @@
 #Formatting Using String Literals
+#Add a "f" before the string quote
+
 #To print in a formatted way
 a = 1
 b = 2
