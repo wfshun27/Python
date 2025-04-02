@@ -4,17 +4,17 @@
 #To print in a formatted way
 a = 1
 b = 2
-print(f"{a}+{b}={a+b}")
+print(f"{a} + {b} = {a+b} \n")
 
 #To format the decimal places
 a = 1.222
 b = 2.333
-print("{1:0.1f}+{0:0.1f}={2:0.1f}".format(a,b,a+b))
+print("{1:0.1f} + {0:0.1f} = {2:0.1f} \n".format(a,b,a+b))
 
 #To arrange the location
 a = 1.222
 b = 2.333
-print(f"{a:0.1f}+{b:0.1f}={a+b:0.1f}")
+print(f"{a:0.1f}+{b:0.1f}={a+b:0.1f} \n")
 
 #Activity: Format Numbers
 a = 4.444
@@ -43,12 +43,13 @@ print(a + " " + b)
 name=input("What's your name?")
 #print(f"Hello, {name}")
 print("Hello", name)
-
+print("\n")
+                  
 x=input("Enter x: ")
 y=input("Enter y: ")
 print(x + y)
 #Resolve it
-print(f"{x} + {y}")
+print(f"{x} + {y}" "\n")
 
 #Format String
 #Method 1:Format
@@ -62,7 +63,7 @@ print(f"A {b} is a quantitative plan for acquiring and using resources over a sp
 #Activity: Format String
 bs ="balance sheet"
 income = "income statement"
-print(f"The finance statements typically require {bs.capitalize()} and {income.upper()}")
+print(f"The finance statements typically require {bs.capitalize()} and {income.upper()} {"\n"}")
 
 #String Methods
 a = "The GST is 7%"
@@ -72,11 +73,11 @@ print(b)
 #Strip Whitespace
 a = ' Hello'.strip()
 b = 'World'
-print(a+b)
+print(a + " " + b + "\n")
 
 #remove whiespace
 name = input("Enter your name: ").strip().upper()
-print(f"Hello! {name}")
+print(f"Hello! {name}\n")
 
 #Activity: Format String
 email = "finance@company.com"
