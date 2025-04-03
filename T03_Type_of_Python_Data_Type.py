@@ -52,7 +52,7 @@ print(x + y)
 print(f"{x} + {y}" "\n")
 
 #Format String
-#Method 1:Format
+#Method 1: Format
 b="budget"
 print("A {} is a quantiative plan for a acquiring and using resources over a specified period".format(b))
 
@@ -75,9 +75,23 @@ a = ' Hello'.strip()
 b = 'World'
 print(a + " " + b + "\n")
 
-#remove whiespace
+#Remove Whitespace
 name = input("Enter your name: ").strip().upper()
 print(f"Hello! {name}\n")
+
+
+#Split and Join Strings
+a = 'Asset is the sum of Liability and Equity.'
+b = a.split()
+print(b)
+
+a = 'Asset\'s = Liability + Equity.'
+b = a.split("=")
+print(b)
+
+c  = " = ".join(b)
+print(c)
+
 
 #Activity: Format String
 email = "finance@company.com"
