@@ -94,6 +94,13 @@ print(c)
 
 
 #Activity: Format String
-email = "finance@company.com"
+"""
+Separate the user name and domain name
+Join back the username and domain name with a '/' >> 123 /company.com
+Replace the company.com to abc.com
+output >>> 123/abc.com
+"""
+
+email = "123@company.com"
 b = email.replace("@company.com", "/abc.com")
 print(b)
