@@ -14,9 +14,13 @@ print("{1:0.1f} + {0:0.1f} = {2:0.1f} \n".format(a,b,a+b))
 #To arrange the location
 a = 1.222
 b = 2.333
-print(f"{a:0.1f}+{b:0.1f}={a+b:0.1f} \n")
+print(f"{a:0.1f} + {b:0.1f} = {a+b:0.1f} \n")
 
-#Activity: Format Numbers
+"""
+Activity: Format Numbers
+Use string literals method to format the output as shown below
+5.55 + 6.67 + 4.4 = 17
+"""
 a = 4.444
 b = 5.555
 c = 6.666
@@ -31,7 +35,6 @@ total_marks = "biology_marks + \
 physics_marks + \
 maths_marks + \
 chemistry_marks"
-
 print(total_marks)
 
 #String
@@ -48,6 +51,7 @@ print("\n")
 x=input("Enter x: ")
 y=input("Enter y: ")
 print(x + y)
+
 #Resolve it
 print(f"{x} + {y}" "\n")
 
@@ -61,6 +65,14 @@ b="budget"
 print(f"A {b} is a quantitative plan for acquiring and using resources over a specified period.")
 
 #Activity: Format String
+"""
+bs="balance sheet"
+income="income statement"
+
+Print the following output using string literals method
+
+"The finance statements typically require Balance sheet and INCOME STATEMENT."
+"""
 bs ="balance sheet"
 income = "income statement"
 print(f"The finance statements typically require {bs.capitalize()} and {income.upper()} {"\n"}")
@@ -68,7 +80,7 @@ print(f"The finance statements typically require {bs.capitalize()} and {income.u
 #String Methods
 a = "The GST is 7%"
 b = a.replace("GST", "Good and Service Tax")
-print(b)
+print(f"{b}\n")
 
 #Strip Whitespace
 a = ' Hello'.strip()
@@ -78,7 +90,6 @@ print(a + " " + b + "\n")
 #Remove Whitespace
 name = input("Enter your name: ").strip().upper()
 print(f"Hello! {name}\n")
-
 
 #Split and Join Strings
 a = 'Asset is the sum of Liability and Equity.'
@@ -92,7 +103,6 @@ print(b)
 c  = " = ".join(b)
 print(c)
 
-
 #Activity: Format String
 """
 Separate the user name and domain name
@@ -100,7 +110,6 @@ Join back the username and domain name with a '/' >> 123 /company.com
 Replace the company.com to abc.com
 output >>> 123/abc.com
 """
-
 email = "123@company.com"
 b = email.replace("@company.com", "/abc.com")
 print(b)

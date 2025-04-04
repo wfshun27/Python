@@ -100,6 +100,12 @@ print(a)
 print((b), "\n")
 
 #Activity: List
+"""
+Copy from original years to years 2
+Remove 2021 in years 2
+Insert '2019' in location 2 in years 2
+Reverse the order of years 2
+"""
 years=['2017', '2018', '2020', '2021']
 years2=years.copy()
 years2.pop()
