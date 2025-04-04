@@ -1,4 +1,8 @@
 #Example of Tuple
+"""
+Tuple is an ordered collection of immutable items which can be of any type
+Tuple is enclosed by (Parentheses)
+"""
 
 #Empty Tuple
 new_tup=() 
@@ -13,7 +17,7 @@ new_tup=(10,20.2,'thirty',40)
 print(new_tup)
 
 #A nested people
-new_tup=((10,20,30), (10.1,20.2,30.3),("team","twenty","thrity"))
+new_tup=((10,20,30),(10.1,20.2,30.3),("team","twenty","thrity"))
 print(new_tup)
 
 new_tup=(10,(20.2,("thirty",(40))))
