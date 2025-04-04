@@ -1,8 +1,4 @@
 #Example of Tuple
-"""
-Tuple is an ordered collection of immutable items which can be of any type
-Tuple is enclosed by (Parentheses)
-"""
 
 #Empty Tuple
 new_tup=() 
