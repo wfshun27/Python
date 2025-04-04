@@ -68,9 +68,7 @@ print(f"A {b} is a quantitative plan for acquiring and using resources over a sp
 """
 bs="balance sheet"
 income="income statement"
-
 Print the following output using string literals method
-
 "The finance statements typically require Balance sheet and INCOME STATEMENT."
 """
 bs ="balance sheet"
