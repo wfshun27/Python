@@ -27,15 +27,15 @@ print(len(revenue))
 revenue = {'2017':'1.3M','2018': '2.2M','2019':'3.5M'}
 print(revenue.keys())
 
-#Values
+#VALUES
 revenue = {'2017':'1.3M','2018': '2.2M','2019':'3.5M'}
 print(revenue.values())
 
-#Items
+#ITEMS
 revenue = {'2017':'1.3M','2018': '2.2M','2019':'3.5M'}
 print(revenue.items())
 
-#Pop
+#POP
 revenue = {'2017':'1.3M','2018': '2.2M','2019':'3.5M'}
 print(revenue.pop('2018'))
 print(revenue)
@@ -45,7 +45,7 @@ revenue = {'2017':'1.3M','2018': '2.2M','2019':'3.5M'}
 del revenue['2017']
 print(revenue)
 
-#Set
+#SET
 new_set = {'equity', 'liability', 'asset', 'expense','income'}
 print(new_set)
 type(new_set)
@@ -54,32 +54,48 @@ type(new_set)
 new_set = {'equity', 'liability', 'asset', 'expense','income', 'equity'}
 print(new_set)
 
-#Union
+"""
+Python has many set methods to maipulate a set, for example
+x.add()
+x.update()
+x.remove()
+x.union(y)
+x.intersection(y)
+x.difference(y)
+x.issubset(y)
+x.issuperset(y)
+"""
+
+#UNION
 a = {'equity','liability','asset'}
 b = {'asset','expense','income'}
 print(sorted(b.union(a)))
 
-#intersection
+#INTERSECTION
 a = {'equity','liability','asset'}
 b = {'asset','expense','income'}
 print(a.intersection(b))
 
-#difference
+#DIFFERENCE
 a = {'equity','liability','asset'}
 b = {'asset','expense','income'}
 print(a.difference(b))
 
-#subset
+#SUBSET
 a = {'equity', 'liability', 'asset',}
 b = {'asset'}
 print(b.issubset(a))
 print(b <= a)
 
-#Suerset
+#SUERSET
 a = {'equity', 'liability', 'asset'}
 b = {'equity', 'liability', 'asset', 'expense', 'income', 'equity'}
-print(b.issuperset(a))
+print(b.issuperset(a), "\n")
 
+#SUPERSET
+a={'equity','liability','asset'}
+b={'equity','liability','asset','expense','income','equity'}
+print(b.issuperset(a))
 
 sentence = "A budget is quantitiative plan for acquiring and using resources over a specified period."
 
@@ -93,6 +109,3 @@ unique_words = set(words)
 # Print the number of unique words and the words themselves
 print("Unique Vocabulary Count:", len(unique_words))
 print("Unique Words:", unique_words)
-
-
-
