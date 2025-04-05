@@ -97,15 +97,29 @@ a={'equity','liability','asset'}
 b={'equity','liability','asset','expense','income','equity'}
 print(b.issuperset(a))
 
+"""
+sent="A budget is a quantitiative plan for acquiring and using resources over a specified period."
+Find out the number of unique vocabulary in this sentence
+Challenge
+Assumed the letter in same for both upper and lower case, find out the number of unique vocabulary. 
+"""
+
 sentence = "A budget is quantitiative plan for acquiring and using resources over a specified period."
 
 # Convert sentence to lowercase and split into words
 words = sentence.lower().split()
-print(words)
+print(words, "\n")
 
 # Use a set to store unique words
 unique_words = set(words)
 
 # Print the number of unique words and the words themselves
-print("Unique Vocabulary Count:", len(unique_words))
+print("Unique Vocabulary Count:", len(unique_words), "\n")
 print("Unique Words:", unique_words)
+
+"""
+Summary of Data Types
+List:[Bracket]
+Tuple: (Parentheses)
+Dictionary/Set: {Braces}
+"""
