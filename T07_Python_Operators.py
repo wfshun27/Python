@@ -32,8 +32,8 @@ Not Equal               !=
 # in or not in
 # Membership Operators
 a = ['equity','liability','asset','expense','income']
-print('asset' in a)
-print('property' in a)
+print('asset' in a, "\n")
+print('property' in a, "\n")
 
 # Logical Operators (Boolean Operators)
 # True or False
