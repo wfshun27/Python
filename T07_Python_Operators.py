@@ -39,8 +39,8 @@ print('property' in a, "\n")
 # True or False
 # True and False
 
-#Activity: Operator
-#The answer is either True or False
+# Activity: Operator
+# The answer is either True or False
 a=1;
 b=2;
 c=(a==1) and not (b>3)
