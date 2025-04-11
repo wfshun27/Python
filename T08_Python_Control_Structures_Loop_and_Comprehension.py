@@ -83,11 +83,48 @@ Use the while loop to
 * compute the golden ratio which is the ration of two subsequent Fibonacci numbers
 """
 a,b = 0, 1
-fib=[]
+count = 0
 
-while a <= 144:
-    a = a+1
+while count <= 144:
+    nth=a+b
+    print(nth)
+    a=b
+    b=nth
     print(a)
+    count+=1
+
+
+# first two terms
+
+n1, n2 = 0, 1
+count = 0
+
+# Get the number of terms from the user
+nterms = int(input("How many terms? "))
+
+# check if the number of terms is valid
+
+if nterms <= 0:
+   print("Please enter a positive integer")
+
+# if there is only one term, return n1
+
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+
+# generate fibonacci sequence
+
+else:
+
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
 
 #Multiple Assignments
 a,b=0,1
