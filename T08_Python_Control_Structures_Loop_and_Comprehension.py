@@ -82,16 +82,13 @@ Use the while loop to
 * compute the fibonacci sequence up to 144 and 
 * compute the golden ratio which is the ration of two subsequent Fibonacci numbers
 """
-a,b = 0, 1
+a, b = 0, 1
 count = 0
 
-while count <= 144:
-    nth=a+b
-    print(nth)
-    a=b
-    b=nth
+while count < 13:
     print(a)
-    count+=1
+    a, b = b, a + b
+    count += 1
 
 
 # first two terms
@@ -125,6 +122,7 @@ else:
        n1 = n2
        n2 = nth
        count += 1
+
 
 #Multiple Assignments
 a,b=0,1
