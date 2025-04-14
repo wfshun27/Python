@@ -21,7 +21,7 @@ if nfb1 <= 0:
 # if there is only one term, return n1
 
 elif nfb1 == 1:
-   print("Fibonacci sequence upto",nfb1,":")
+   print("Fibonacci sequence up to",nfb1,":")
    print(n1)
 
 # generate fibonacci sequence
@@ -53,20 +53,22 @@ print('The end.')
 
 def show_menu():
     print("\n=== Main Menu ===")
-    print("a. Option A")
-    print("b. Option B")
+    print("a. Fibonacci Sequence Number")
+    print("b. Fibonacci Sequence Number with Golden Ratio")
     print("c. Option C")
     print("q. Quit")
-
-num1, num2 = 0, 1
-count = 0
 
 while True:
     show_menu()
     selected_option = input("Please enter 'a', 'b', or 'c', or enter 'q' to quit: ")
 
     if selected_option == "a":
-        print("You selected option 'a'!")
+        
+        print("Fibonacci Sequence Number")
+
+        num1, num2 = 0, 1
+        count = 0
+
         number = int(input('Enter a number: '))
         while count < number:
             print(num1)
@@ -77,47 +79,65 @@ while True:
             count += 1   
         
     elif selected_option == "b":
-        print("You selected option 'b'!")
+        
+        print("Fibonacci Sequence Number with Golden Ratio")
+        
         a, b = 0, 1
         count = 0
-        list_a=[]
-        list_b=[]
+        fib = [a,b]
+        theratio=[]
+
         number = int(input('Enter a number: '))
+        
         while count < number:
-            list_a.append(a)
-            a, b = b, a + b
-            count += 1
-        print(list_a)
+             next_val = fib[-1] + fib[-2]
+             fib.append(next_val)
+             
+
+             # Calculate golden ratio
+             ratio = fib[-1] / fib[-2]
+        
+             theratio.append(round(ratio, 3))
+             count += 1
+               
+        print(fib)
+        print(theratio)
 
     elif selected_option == "c":
+
         print("You selected option 'c'!")
-        a, b = 0, 1
-        count = 0
-        fib = [a, b]
-        theratio = []
 
-        number = int(input('Enter how many golden ratios to compute: '))
+        num1=0
+        num2=1
+        fib=[]
+        n=1
 
-# We need (number + 2) Fibonacci numbers to compute `number` golden ratios
-        while count < number:
-                next_val = fib[-1] + fib[-2]
-                fib.append(next_val)
+        fib.append(num1)
+        fib.append(num2)
 
-                # Calculate golden ratio
-                ratio = fib[-1] / fib[-2]
-                theratio.append(round(ratio, 3))
+        print(fib)
 
-                count += 1
+        while n <=11:
+            nextNum = fib[n]+fib[n-1]
+            fib.append(nextNum)
+            n+=1    
+        print(fib)
 
-                print("\nFibonacci sequence:", fib)
-                print("Golden ratio approximations:")
-                for i, r in enumerate(theratio, start=2):  # start at 2nd ratio (F2/F1)
-                    print(f"Term {i + 1}: {r}")
+        n=2
+        theratio=[]
 
-        
+        while n <=11:
+            ratio= fib[n] / fib[n-1]
+            theratio.append((round(ratio, 3)))
+            n+=1
+        print(theratio)
+
+
+       
     elif selected_option == "q":
         print("You selected option 'q'! Quitting the menu!")
         break
+
     else:
         print("You selected an invalid option.")
 
