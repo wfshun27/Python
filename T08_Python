@@ -65,6 +65,7 @@ while True:
     elif selected_option == "c":
        
         clear_screen()
+
         print("Fibonacci Sequence Number with Golden Rati Simple version")
 
         num1=0
@@ -91,7 +92,8 @@ while True:
             theratio.append((round(ratio, 3)))
             n+=1
         print(theratio)
-       
+        input('Press enter to continue')   
+
     elif selected_option == "q":
         
         clear_screen()
