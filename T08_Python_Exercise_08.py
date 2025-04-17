@@ -1,3 +1,5 @@
+#Exercise
+
 import os
 
 def show_menu():
@@ -12,7 +14,6 @@ def clear_screen():
 
 while True:
     
-    clear_screen()
     show_menu()
 
     selected_option = input("Please enter 'a', 'b', or 'c', or enter 'q' to quit: ")
@@ -63,10 +64,9 @@ while True:
         input('Press enter to continue')    
 
     elif selected_option == "c":
-       
+    
         clear_screen()
-
-        print("Fibonacci Sequence Number with Golden Rati Simple version")
+        print("Fibonacci Sequence Number with Golden Ratio Simple version")
 
         num1=0
         num2=1
