@@ -1,4 +1,17 @@
-#Exercise
+"""
+Fibonacci and Golden Ratio in Nature
+Fibonacci and Golden Ratio in Art and Architure
+Golden Ration in Technical Analysis
+"""
+"""
+Activity: Compute Fibonacci Seq and Golden Ratio Using While Loop
+Fibonacci nymber is the sum of the previous 2 fibonacci numbers.
+1,1,2,3,5,8,21,34,...
+
+Use the while loop to 
+* compute the fibonacci sequence up to 144 and 
+* compute the golden ratio which is the ration of two subsequent Fibonacci numbers
+"""
 
 import os
 
