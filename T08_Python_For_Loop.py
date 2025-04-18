@@ -45,7 +45,7 @@ Question:
 """
 
 a=range(2,12,2)
-print(list(a))
+print(list(a),'\n')
 
 for i in range(3):
     print(i)
