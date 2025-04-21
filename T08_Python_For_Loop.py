@@ -38,57 +38,8 @@ for i in Close_Price_ABC:
 print("We are now out of the loop") 
 print("\n")
 
-"""
-Range function generates sequence of number
-range(start, stop-1, step)
-Question:
-"""
-
-a=range(2,12,2)
-print(list(a),'\n')
-
-for i in range(3):
-    print(i)
-print("\n")
-
-#Multiple Assignments
-#a,b= 1,2
-#fib=[]
-#while (b>=100):
-#    a=b
-#    b=a*b
-#    fib.append(b)
-#print(fib)
-
-for x in range(1,11):
-    a = x**2
-    print(a)
-
-a = [x**2 for x in range(1,11)]
-print(a)
-
-a=[]
-for x in range(1,11):
-    a.append(x**2)
-print(a)
-  
-#Enumerate()
-fruits = ["Apple","Banana","Cherry","Durian"]
-x = enumerate(fruits)
-print(list(x))
-
-a=[]
-for i,f in enumerate(fruits):
-    a.append((i,f))    
-print(a)
-
-year=['2017','2018','2019']
-revenue=[150000,200000,500000]
 
 
-for i,y in enumerate(year):
-    r = revenue[i]
-    print(f"{y}'s revenue is ${r}")
 
 #ZIP
 names = ['Alfred','Ally','Belinda']
@@ -141,7 +92,6 @@ print(d)
 #Example
 d = {i:i**2 for i in range(1,19) if i%3!=0 and i%5!=0}
 print(d)
-
 
 a=[1,2]
 b=[3,4]
