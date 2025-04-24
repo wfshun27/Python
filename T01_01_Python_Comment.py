@@ -9,3 +9,10 @@ THis is a comment
 written in more than just one line
 """
 print("Hellow World!\n")
+
+#Activity: Python Script
+x=2
+y=3
+sum= x+y
+print("The sum of",x,"and",y,"is",sum)
+

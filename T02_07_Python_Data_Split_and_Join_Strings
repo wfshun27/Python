@@ -1,0 +1,22 @@
+#Split and Join Strings
+a = 'Asset is the sum of Liability and Equity.'
+b = a.split()
+print(b)
+
+a = 'Asset\'s = Liability + Equity.'
+b = a.split("=")
+print(b)
+
+c  = " = ".join(b)
+print(c)
+
+#Activity: Format String
+"""
+Separate the user name and domain name
+Join back the username and domain name with a '/' >> 123 /company.com
+Replace the company.com to abc.com
+output >>> 123/abc.com
+"""
+email = "123@company.com"
+b = email.replace("@company.com", "/abc.com")
+print(b)
