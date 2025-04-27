@@ -1,11 +1,10 @@
 #String
 a = 'Hello'
 b = 'World'
-print(a + " " + b)
+print(a + " " + b, "\n")
 
 """
 String Methods
-Python has many string methods that can be used to manipulate strings.
 - c.upper()
 - c.lower()
 - c.capitalize()
@@ -41,13 +40,15 @@ print("A {} is a quantiative plan for a acquiring and using resources over a spe
 b="budget"
 print(f"A {b} is a quantitative plan for acquiring and using resources over a specified period.")
 
-#Activity: Format String
+#Exercise: Format String
+
 """
 bs="balance sheet"
 income="income statement"
 Print the following output using string literals method
 "The finance statements typically require Balance sheet and INCOME STATEMENT."
 """
+
 bs ="balance sheet"
 income = "income statement"
 print(f"The finance statements typically require {bs.capitalize()} and {income.upper()} {"\n"}")

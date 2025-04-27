@@ -1,16 +1,16 @@
 #Split and Join Strings
 a = 'Asset is the sum of Liability and Equity.'
 b = a.split()
-print(b)
+print(b, "\n")
 
 a = 'Asset\'s = Liability + Equity.'
 b = a.split("=")
-print(b)
+print(b, "\n")
 
 c  = " = ".join(b)
-print(c)
+print(c, "\n")
 
-#Activity: Format String
+#Exercise: Format String
 """
 Separate the user name and domain name
 Join back the username and domain name with a '/' >> 123 /company.com

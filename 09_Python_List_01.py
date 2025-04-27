@@ -8,14 +8,12 @@ print("\n")
 #A List of integers
 new_list = [10, 20, 30, 40]
 print(type(new_list))
-print(new_list)
-print("\n")
+print(new_list, "\n")
 
 #A List of mixed data types
 new_list = [[10, 20, 30, 40], ["ten", "twenty", "thirty"]]
 print(new_list)
-print(type(new_list))
-print("\n")
+print(type(new_list), "\n")
 
 #A Nested List
 new_list = [[10, 20, 30], [10.1, 20.2, 30.3], ["ten", "twenty", "thirty"]]
@@ -99,7 +97,7 @@ b.pop()
 print(a)
 print((b), "\n")
 
-#Activity: List
+#Exercise: List
 """
 Copy from original years to years 2
 Remove 2021 in years 2
