@@ -1,5 +1,5 @@
 """
-Python supports 6 major data types:
+6 major data types:
 1. Numbers
 2. Strings
 3. Lists
@@ -9,9 +9,6 @@ Python supports 6 major data types:
 """
 
 # Numbers
-#Python suppoort integers, floats, and complex numbers
-#Python also support type inference
-
 
 x = 1
 print (x) # This will print the value of 'x' varible
