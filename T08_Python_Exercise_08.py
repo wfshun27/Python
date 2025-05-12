@@ -28,7 +28,6 @@ def clear_screen():
 while True:
     
     show_menu()
-
     selected_option = input("Please enter 'a', 'b', or 'c', or enter 'q' to quit: ")
 
     if selected_option == "a":
